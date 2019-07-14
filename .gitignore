@@ -1,0 +1,89 @@
+node_modules
+package-lock.json
+/dist
+/tmp
+/out-tsc
+# Only exists if Bazel was run
+/bazel-out
+
+# dependencies
+/node_modules
+
+# profiling files
+chrome-profiler-events.json
+speed-measure-plugin.json
+
+# IDEs and editors
+/.idea
+.project
+.classpath
+.c9/
+*.launch
+.settings/
+*.sublime-workspace
+
+# IDE - VSCode
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+.history/*
+
+# misc
+/.sass-cache
+/connect.lock
+/coverage
+/libpeerconnection.log
+npm-debug.log
+yarn-error.log
+testem.log
+/typings
+
+# System Files
+.DS_Store
+Thumbs.db
+
+thermo-stats-client/dist
+thermo-stats-client/tmp
+thermo-stats-client/out-tsc
+# Only exists if Bazel was run
+thermo-stats-client/bazel-out
+
+# dependencies
+thermo-stats-client/node_modules
+
+# profiling files
+thermo-stats-client/chrome-profiler-events.json
+thermo-stats-client/speed-measure-plugin.json
+
+# IDEs and editors
+thermo-stats-client/.idea
+thermo-stats-client/.project
+thermo-stats-client/.classpath
+thermo-stats-client/.c9/
+thermo-stats-client/*.launch
+thermo-stats-client/.settings/
+thermo-stats-client/*.sublime-workspace
+
+# IDE - VSCode
+thermo-stats-client/.vscode/*
+thermo-stats-client/!.vscode/settings.json
+thermo-stats-client/!.vscode/tasks.json
+thermo-stats-client/!.vscode/launch.json
+thermo-stats-client/!.vscode/extensions.json
+thermo-stats-client/.history/*
+
+# misc
+thermo-stats-client/.sass-cache
+thermo-stats-client/connect.lock
+thermo-stats-client/coverage
+thermo-stats-client/libpeerconnection.log
+thermo-stats-client/npm-debug.log
+thermo-stats-client/yarn-error.log
+thermo-stats-client/testem.log
+thermo-stats-client/typings
+
+# System Files
+thermo-stats-client/.DS_Store
+thermo-stats-client/Thumbs.db

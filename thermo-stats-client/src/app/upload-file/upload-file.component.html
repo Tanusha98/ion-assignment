@@ -1,0 +1,42 @@
+<input type="file" #file style="display: none" (change)="onFileChange()"/>
+<div
+  class="container p-5"
+  fxLayout="column"
+  fxLayoutAlign="space-evenly stretch"
+>
+  <div>
+    <button
+      [disabled]="uploading || uploadSuccessful"
+      mat-raised-button
+      color="primary"
+      class="add-files-btn"
+      (click)="browseFile()"
+    >
+      Browse
+    </button>
+  </div>
+
+  <div *ngIf="inputFile">
+    <h4 mat-line>{{ inputFile?.name }}</h4>
+    <mat-progress-bar
+      *ngIf="progress"
+      mode="determinate"
+      [value]="progress[inputFile?.name].progress | async"
+    ></mat-progress-bar>
+  </div>
+
+  <div class="actions">
+    <button *ngIf="showCancelButton" mat-button mat-dialog-close>Cancel</button>
+    <button
+      mat-raised-button
+      color="primary"
+      [disabled]="
+        (primaryButtonText === 'Upload' && inputFile === undefined) ||
+        (primaryButtonText === 'Finish' && uploading)
+      "
+      (click)="closeDialog()"
+    >
+      {{ primaryButtonText }}
+    </button>
+  </div>
+</div>

@@ -1,0 +1,35 @@
+<form>
+  <mat-form-field>
+    <input
+      matInput
+      [matDatepicker]="fromDatePicker"
+      placeholder="From Date"
+      [formControl]="fromDate"
+    />
+    <mat-datepicker-toggle
+      matSuffix
+      [for]="fromDatePicker"
+    ></mat-datepicker-toggle>
+    <mat-datepicker #fromDatePicker></mat-datepicker>
+  </mat-form-field>
+  <mat-form-field>
+    <input
+      matInput
+      [matDatepicker]="toDatePicker"
+      placeholder="To Date"
+      [formControl]="toDate"
+    />
+    <mat-datepicker-toggle
+      matSuffix
+      [for]="toDatePicker"
+    ></mat-datepicker-toggle>
+    <mat-datepicker #toDatePicker></mat-datepicker>
+  </mat-form-field>
+    <button mat-raised-button (click)="getChart()">Display Graph</button>
+</form>
+
+<div
+  style="height: 370px; width: 100%; margin-left:auto;margin-right:auto;"
+>
+  <canvas id="canvas">{{ chart }}</canvas>
+</div>

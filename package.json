@@ -1,0 +1,23 @@
+{
+  "name": "thermostats",
+  "version": "1.0.0",
+  "description": "collect themometer data and visulaize them using charts",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "tanusha m",
+  "license": "ISC",
+  "dependencies": {
+    "JSONStream": "^1.3.5",
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "formidable": "^1.2.1",
+    "fs": "0.0.1-security",
+    "mongoose": "^5.6.4",
+    "node-unrar-js": "^0.8.1",
+    "nodemon": "^1.19.1",
+    "unrar": "^0.1.7"
+  }
+}
